@@ -39,14 +39,27 @@ font-family: 'Lobster', cursive;
     font-size: 20px;
 }
 
+.slogan{
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(5, 5, 87);
+    margin-top: 40px;
+    font-weight: bold;
+}
+.image{
+    height: 300px;
+    width: 230px;
+    margin-left: 95px;
+    
+}
 .About{
     padding: 20px;
-    margin: 30px;
-    margin-top: 60px;
+    margin-left: 30px;
 }
 
   .heading{
     font-size: 25px;
+    font-weight: bold;
   }
 .ab1{
     margin-right:40vw;
@@ -55,11 +68,20 @@ font-family: 'Lobster', cursive;
     margin-left: 40vw;
 }
 
-.para{
+.para1{
     background: #111;
     color: #fff;
     padding: 15px 23px;
     margin: 15px;
+    margin-left: 85px;
+}
+.para2{
+    background: #111;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 23px;
+    margin: 15px;
+    margin-right: 85px;
 }
 footer {
     background: #111;
@@ -69,3 +91,30 @@ footer {
     color: #fff;
     text-align: center;
   }
+
+  .carousel-container{
+    width: 900px;
+    height: 1000px;
+    overflow: hidden;
+    margin-top: 150px;
+    margin-left: 290px;
+  }
+  
+  .card:hover{
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+transition: 0.5s;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.main-container{
+    background-image: url("https://media.istockphoto.com/id/1084742766/photo/rescued-under-water.jpg?s=612x612&w=0&k=20&c=TASMQTyG0LmV8c8LXCpEY8x7bv-rLQKu34EOeqn8-m0=");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
