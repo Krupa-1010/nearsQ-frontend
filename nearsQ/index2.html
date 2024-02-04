@@ -49,13 +49,13 @@
                 <a class="nav-link" href="index.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Camp Info">Camp Info</a>
+                <a class="nav-link" id="camp" href="#Camp Info">Camp Info</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Guidelines">Guidelines</a>
+                <a class="nav-link" id="guideline"href="#Guidelines">Guidelines</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Volunteer">Volunteer</a>
+                <a class="nav-link"id="volunteer" href="#Volunteer">Volunteer</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="navbarAlertLink" href="#Alert">Alert</a>
@@ -132,22 +132,45 @@
         }
     });
 
-    document.querySelector('.navbar-nav .nav-link[href="#Guidelines"]').addEventListener('click', function() {
-            window.location.href = 'index3.html'; // Navigate to index3.html
-        });
+   
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'index3.html';
+        }
 
-        // Add event listener for "Guidelines" card
-        document.querySelector('.ab2 .card-title').addEventListener('click', function() {
-            window.location.href = 'index3.html'; // Navigate to index3.html
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('guideline').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
         });
-
-        document.querySelector('.navbar-nav .nav-link[href="#Camp Info"]').addEventListener('click', function() {
-        window.location.href = 'index4.html'; // Navigate to index4.html
     });
 
-    // Add event listener for "Volunteer" in the navigation bar
-    document.querySelector('.navbar-nav .nav-link[href="#Volunteer"]').addEventListener('click', function() {
-        window.location.href = 'camp.html'; // Navigate to camp.html
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'index4.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('camp').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'registration.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('volunteer').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
+        });
     });
 
 </script>

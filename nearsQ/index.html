@@ -39,22 +39,22 @@
                 <a class="nav-link" href="#About">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Camp Info">Camp Info</a>
+                <a class="nav-link" id="camp" href="#Camp Info">Camp Info</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Guidelines">Guidelines</a>
+                <a class="nav-link" id="guideline" href="#Guidelines">Guidelines</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Volunteer">Volunteer</a>
+                <a class="nav-link" id="volunteer" href="#Volunteer">Volunteer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="navbarAlertLink" href="#Alert">Alert</a>
+                <a class="nav-link" id="alert" href="#Alert">Alert</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Login/signup">Login/signup</a>
+                <a class="nav-link" id="login" href="#Login/signup">Login/signup</a>
               </li>
             </ul>
         </div>
@@ -88,7 +88,9 @@
   </a>
   <h1 class="slogan">"Rapid Response, Reliable Relief: Uniting for Disaster Resilience."</h1>
 </div>
+<div class="text-n">
   <img  class="image" src="nearsQ.jpg" alt="image of nearsQ">
+</div>
 </div>
 
   </section>
@@ -177,31 +179,74 @@
       </div>
 
       <script>
+         document.addEventListener('DOMContentLoaded', function() {
         // Function to navigate to index2.html
         function navigateToIndex2() {
             window.location.href = 'index2.html';
         }
-      
+
         // Event listener for the "Alert" link in the navbar
-        document.getElementById('navbarAlertLink').addEventListener('click', function() {
+        document.getElementById('alert').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
             navigateToIndex2();
         });
-      
-        // Event listener for the "Alert" card
-        document.getElementById('cardAlertLink').addEventListener('click', function() {
-            navigateToIndex2();
-        });
-      
-        // Add event listener for "Guidelines" link in navbar
-        document.querySelector('.navbar-nav .nav-link[href="#Guidelines"]').addEventListener('click', function() {
-            window.location.href = 'index3.html'; // Navigate to index3.html
-        });
-      
-        // Add event listener for "Guidelines" card
-        document.querySelector('.ab2 .card-title').addEventListener('click', function() {
-            window.location.href = 'index3.html'; // Navigate to index3.html
-        });
+    });
+
+        // Function to navigate to index2.html
         
+      
+        document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'index3.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('guideline').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
+        });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'index4.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('camp').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'registration.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('volunteer').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'index1.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('login').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
+        });
+    });
       </script>
 </body>
 </html>

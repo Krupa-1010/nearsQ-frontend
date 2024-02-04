@@ -32,13 +32,13 @@
                 <a class="nav-link" href="index.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Camp Info">Camp Info</a>
+                <a class="nav-link" id="camp"href="#Camp Info">Camp Info</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Guidelines">Guidelines</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Volunteer">Volunteer</a>
+                <a class="nav-link" id="volunteer"href="#Volunteer">Volunteer</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="navbarAlertLink" href="#Alert">Alert</a>
@@ -181,26 +181,55 @@
 
     </script>
     <script>
-        var sidemenu=document.getElementById("sidemenu");
+       var sidemenu=document.getElementById("sidemenu");
 
         function openmenu(){
             sidemenu.style.right="0";
-        }
 
+        }
+<!-- Add this script at the end of your <body> tag -->
+
+    document.addEventListener('DOMContentLoaded', function() {
         // Function to navigate to index2.html
         function navigateToIndex2() {
             window.location.href = 'index2.html';
         }
 
         // Event listener for the "Alert" link in the navbar
-        document.getElementById('navbarAlertLink').addEventListener('click', function() {
+        document.getElementById('navbarAlertLink').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
             navigateToIndex2();
         });
+    });
 
-        // Event listener for the "Alert" card
-        document.getElementById('cardAlertLink').addEventListener('click', function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'index4.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('camp').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
             navigateToIndex2();
         });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to navigate to index2.html
+        function navigateToIndex2() {
+            window.location.href = 'registration.html';
+        }
+
+        // Event listener for the "Alert" link in the navbar
+        document.getElementById('volunteer').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent the default behavior of the link
+            navigateToIndex2();
+        });
+    });
+
+
+        
 
         
     </script>

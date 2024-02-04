@@ -45,11 +45,13 @@ font-family: 'Lobster', cursive;
     color: rgb(5, 5, 87);
     margin-top: 40px;
     font-weight: bold;
+    text-align: center;
 }
 .image{
     height: 300px;
     width: 230px;
     margin-left: 95px;
+    
     
 }
 .About{
@@ -117,4 +119,7 @@ transition: 0.5s;
     background-attachment: fixed;
     background-position: center;
     height: 100vh;
+}
+.text-n{
+    text-align: center;
 }
