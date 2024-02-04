@@ -1,6 +1,8 @@
 
 nearsQ-"Rapid Response Reliable Relief: United For Disaster Resilience" (FrontEnd)
+
 Overview
+
 Welcome to the FrontEnd repository of nearsQ, a website dedicated to coordinating disaster response, relief, and preparedness. The primary goal is to facilitate effective communication between those in need and volunteers who can provide assistance during times of disasters. This FrontEnd application is built using HTML, CSS, JavaScript, Bootstrap, Leaflet, and OpenStreetMap.
 
 Key Features
