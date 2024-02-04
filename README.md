@@ -24,8 +24,13 @@ Coordination Hub: Volunteers can coordinate and collaborate efficiently through 
 
 Technologies Used
 HTML: Markup language for structuring the content of the website.
+
 CSS: Stylesheet language for designing and layout.
+
 JavaScript: Programming language for dynamic and interactive website features.
+
 Bootstrap: Front-end framework for responsive and mobile-first design.
+
 Leaflet: JavaScript library for interactive maps.
+
 OpenStreetMap: Collaborative mapping project providing free geographic data and mapping to anyone who wants to use it.
